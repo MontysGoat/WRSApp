@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html ng-app='WRSApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Well Rounded Square</title>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Michroma|Montserrat+Alternates|Nunito|Nunito+Sans|Open+Sans+Condensed:300|Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/wrs.css">
+    <link rel="stylesheet" href="css/common.css">
+  </head>
+  <body>
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="index.html" class="pull-left visible-md visible-lg">
+            <div id="logo-img" alt="Logo image"></div>
+          </a>
+
+          <div class="navbar-brand">
+            <a href="index.html"><h1>WRS</h1></a>
+          </div>
+
+          <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+          <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li id="navHomeButton" class="visible-xs">
+              <a href="index.html">
+                <span class="glyphicon glyphicon-home"></span> Home</a>
+            </li>
+            <li id="navMenuButton" ui-sref-active="active">
+              <a ui-sref="public.menu">Resume</a>
+            </li>
+            <!-- <li ui-sref-active="active">
+              <a ui-sref="public.myinfo">
+                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> My Info</a>
+            </li>
+            <li ui-sref-active="active">
+              <a ui-sref="public.signup">
+                <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Sign Up</a>
+            </li>
+            <li id="phone" class="hidden-xs">
+              <a href="tel:410-602-5008">
+                <span>410-602-5008</span></a><div>* We Deliver</div>
+            </li> -->
+          </ul><!-- #nav-list -->
+        </div><!-- .collapse .navbar-collapse -->
+      </div><!-- .container -->
+    </nav><!-- #header-nav -->
+  </header>
+    <ui-view></ui-view>
+
+    <!-- Libraries -->
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-ui-router.min.js"></script>
+
+    <!-- Modules -->
+    <script src="src/public/wrsapp/wrsapp.module.js"></script>
+
+    <!-- Routes-->
+    <script src="src/public/public.routes.js"></script>
+
+    <!-- 'WRSApp' module artifacts-->
+
+
+  </body>
+</html>
