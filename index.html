@@ -6,7 +6,10 @@
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Michroma|Montserrat+Alternates|Nunito|Nunito+Sans|Open+Sans+Condensed:300|Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/themes/darkThemePalette.css">
     <link rel="stylesheet" href="css/wrs.css">
     <link rel="stylesheet" href="css/common.css">
   </head>
@@ -14,9 +17,6 @@
     <nav id="header-nav" class="navbar navbar-default">
       <div class="container">
         <div class="navbar-header">
-          <a href="index.html" class="pull-left visible-md visible-lg">
-            <div id="logo-img" alt="Logo image"></div>
-          </a>
 
           <div class="navbar-brand">
             <a href="index.html"><h1>WRS</h1></a>
@@ -31,13 +31,19 @@
         </div>
 
         <div id="collapsable-nav" class="collapse navbar-collapse">
-          <ul id="nav-list" class="nav navbar-nav navbar-right">
+          <ul id="nav-list" class="nav navbar-nav navbar-left">
             <li id="navHomeButton" class="visible-xs">
               <a href="index.html">
                 <span class="glyphicon glyphicon-home"></span> Home</a>
             </li>
             <li id="navMenuButton" ui-sref-active="active">
-              <a ui-sref="public.menu">Resume</a>
+                <a ui-sref="public.wrsapp.about">About</a>
+              </li>
+            <li id="navMenuButton" ui-sref-active="active">
+              <a ui-sref="public.wrsapp.resume">Résumé</a>
+            </li>
+            <li id="navMenuButton" ui-sref-active="active">
+              <a ui-sref="public.wrsapp.contact">Contact</a>
             </li>
             <!-- <li ui-sref-active="active">
               <a ui-sref="public.myinfo">
@@ -52,7 +58,11 @@
                 <span>410-602-5008</span></a><div>* We Deliver</div>
             </li> -->
           </ul><!-- #nav-list -->
+         <button type="button" class="btn btn-primary nav navbar-nav navbar-right">
+            <i class="material-icons">highlight</i>
+          </button>
         </div><!-- .collapse .navbar-collapse -->
+       
       </div><!-- .container -->
     </nav><!-- #header-nav -->
   </header>

@@ -1,0 +1,10 @@
+:root{
+    --primary-hue-mid:    #eeeeee;
+    --primary-hue-light:  #ffffff;
+    --primary-hue-dark:   #bcbcbc;
+    --secondary-hue-mid:  #ff7043;
+    --secondary-hue-light:#ffa270;
+    --secondary-hue-dark: #c63f17;
+    --text-on-primary:    #000000;
+    --text-on-secondary:  #000000;
+}
