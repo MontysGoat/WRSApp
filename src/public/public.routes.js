@@ -8,22 +8,22 @@
   function RoutesConfig($stateProvider, $urlRouterProvider) {
   
     // Redirect to home page if no other URL matches
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/resume');
   
     // *** Set up UI states ***
     $stateProvider
   
     // Home page
-    .state('home', {
-      url: '/',
-      templateUrl: 'src/wrsapp/templates/home.template.html'
-    })
+    // .state('home', {
+    //   url: '/',
+    //   templateUrl: 'src/wrsapp/templates/home.template.html'
+    // })
   
     // Resume Page
-    .state('resume', {
+    .state('public.wrsapp.resume', {
       url: '/resume',
-      templateUrl: 'src/wrsapp/templates/categories.template.html',
-      controller: 'CategoriesController as ctrl'
+      templateUrl: 'src/public/wrsapp/resume/resume.template.html',
+      controller: 'ResumeController as resumeCtrl'
     });
   }
   

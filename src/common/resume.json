@@ -1,0 +1,70 @@
+{
+    "resume":{
+        "personal_info":{
+            "name":"WRS",
+            "career":"Software Developer",
+            "email":"test@test.com",
+            "website":"www.WellRoundedSquare.net"
+        },
+        "experience":[
+            {
+                "time":"2018-Present",
+                "company":"AVEVA",
+                "title":"Senior Software Developer",
+                "location":"Owings Mills, MD",
+                "tasks":[
+                    "Developed next gen oil pipeline simulation and leak detection platform on an Agile team",
+                    "Implemented key features for simulation and configuration software in C#",
+                    "Built and designed modern reactive GUI using WPF",
+                    "Focused on test driven development leveraging Nunit, Ninject, and Moq."
+                ]
+            },
+            {
+                "time":"2014-2017",
+                "company":"AVEVA",
+                "title":"Senior Simulation Engineer",
+                "location":"Owings Mills, MD",
+                "tasks":[
+                    "Developed and delivered legacy pipeline energy optimization tool in C#",
+                    "Built custom software tools used by customers",
+                    "Configured and maintained realtime transient pipeline models",
+                    "Wrote and delivered multiple training sessions for internal/external audiences"
+                ]
+            },
+            {
+                "time":"2011-2014",
+                "company":"Controls Southeast Inc.",
+                "title":"Technical Services Engineer",
+                "location":"Charlotte, NC",
+                "tasks":[
+                    "Designed external bolt-on heating systems (steam/hot oil) for industrial vessels and piping",
+                    "Wrote technical reports (thermal/hydraulic) using CFD and FEA analysis",
+                    "R&D: Developed new products in both a hands-on and engineering design capacity",
+                    "Co-invented Sulphur Seal Device (US Patent #20130247763 A1)"
+                ]
+            }
+        ],
+        "education":[
+            {
+                "school":"Johns Hopkins University",
+                "location":"Baltimore, MD",
+                "graduation_date":"08/2019",
+                "degree":"Masters in Computer Science",
+                "GPA":"3.9"
+            },
+            {
+                "school":"University of South Carolina",
+                "location":"Columbia, SC",
+                "graduation_date":"12/2010",
+                "degree":"Bachelor of Science in Chemical Engineering",
+                "GPA":"3.7"
+            }
+        ],
+        "software":{
+            "languages":["C#","Java","C++","Javascript"],
+            "tools":["WPF","AngularJS","Git","NUnit","Ninject","Moq","SQL"],
+            "devops":["Jenkins", "TFS", "GitLab"],
+            "process":["Agile","Scrum"]
+        }
+    }
+}
