@@ -1,7 +1,7 @@
 body {
   font-size: 16px;
-  color: var(--primary-hue-mid);
-  background-color:var(--text-on-primary);;
+  color: var(--text-on-primary);
+  background-color:var(--primary-hue-mid);
   font-family: 'Nunito', sans-serif;
 }
 
@@ -12,6 +12,9 @@ body {
 .navbar-nav > li{
   margin-right:5px;
   margin-left: 5px;
+  color: var(--text-on-primary);
+  background-color:var(--primary-hue-mid);
+
 }
 
 /** HEADER **/
@@ -69,7 +72,6 @@ body {
   margin-bottom: 10px;
 }
 #nav-list a {
-  color: rgb(233, 222, 213);
   border: 1px solid #E7E7E7;
   text-align: center;
   padding-top: -10px;
@@ -82,6 +84,14 @@ body {
 }
 #nav-list a span {
   font-size: 1.8em;
+}
+
+.box {
+  border: 1px solid #E7E7E7;
+}
+
+.active {
+  color: var(--secondary-hue-mid)
 }
 
 #phone {

@@ -7,7 +7,8 @@
     ResumeController.$inject = ['resume'];
     function ResumeController(resume) {
       var $ctrl = this;
-      $ctrl.experiences = resume.experiences;
+      $ctrl.experiences = resume.resume.experience;
+      $ctrl.personal_info = resume.resume.personal_info;
     }
     
     
