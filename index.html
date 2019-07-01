@@ -41,7 +41,7 @@
                   <a ui-sref="public.wrsapp.about">About</a>
                 </li> -->
               <li id="navMenuButton" ui-sref-active="active">
-                <a ui-sref="public.wrsapp.resume">Résumé</a>
+                <a ui-sref="resume">Résumé</a>
               </li>
               <!-- <li id="navMenuButton" ui-sref-active="active">
                 <a ui-sref="public.wrsapp.contact">Contact</a>
@@ -60,20 +60,24 @@
     <!-- Libraries -->
     <script src="lib/angular.min.js"></script>
     <script src="lib/angular-ui-router.min.js"></script>
+    
+    <!--Main WRSApp Module -->
+    <script src="src/wrsapp.module.js"></script>
 
     <!--Common Modules -->
-    <script src="src\common\common.module.js"></script>
-    <script src="src\common\resume.service.js"></script>
+    <script src="src/common/common.module.js"></script>
+    <script src="src/common/resume.service.js"></script>    
 
-    <!--Public Modules -->
-    <script src="src/public/wrsapp/wrsapp.module.js"></script>
-    <script src="src/public/wrsapp/resume/resume.controller.js"></script>
-    <script src="src/public/wrsapp/resume/resume-header/resume-header.component.js"></script>
+    <!-- Public Modules -->
+    <script src="src/public/public.module.js"></script>
 
     <!-- Routes-->
     <script src="src/public/public.routes.js"></script>
 
-    <!-- 'WRSApp' module artifacts-->
+    <!-- 'WRSApp' module artifacts-->    
+    <script src="src/public/wrsapp/resume/resume.controller.js"></script>
+    <script src="src/public/wrsapp/resume/resume-header/resume-header.component.js"></script>
+
 
 
   </body>

@@ -11,10 +11,8 @@
     });
     
     
-    ResumeHeaderController.$inject = ['ApiPath'];
-    function ResumeHeaderController(ApiPath) {
+    function ResumeHeaderController() {
       var $ctrl = this;
-      $ctrl.basePath = ApiPath;
     }
     
     })();

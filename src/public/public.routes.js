@@ -20,12 +20,17 @@
     // })
   
     // Resume Page
-    .state('public.wrsapp.resume', {
+    .state('resume', {
       url: '/resume',
       templateUrl: 'src/public/wrsapp/resume/resume.template.html',
-      controller: 'ResumeController as resumeCtrl'
+      controller: 'ResumeController',
+      controllerAs: 'resumeCtrl',
+      resolve: {
+        resume: ['ResumeService', function (ResumeService) {
+          return ResumeService.getResume();
+        }]
+      }
     });
-  }
-  
+  }  
   })();
   

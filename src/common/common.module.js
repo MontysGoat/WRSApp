@@ -6,7 +6,7 @@
     
     config.$inject = ['$httpProvider'];
     function config($httpProvider) {
-      $httpProvider.interceptors.push('loadingHttpInterceptor');
+      //$httpProvider.interceptors.push('loadingHttpInterceptor');
     }
     
     })();

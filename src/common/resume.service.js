@@ -10,7 +10,7 @@
       var service = this;
     
       service.getResume = function () {
-        return $http.get('/resume.json').then(function (response) {
+        return $http.get('src/common/resume.json').then(function (response) {
           return response.data;
         });
       };
