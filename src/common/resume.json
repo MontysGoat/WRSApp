@@ -62,7 +62,7 @@
         ],
         "software":{
             "languages":["C#","Java","C++","Javascript"],
-            "tools":["WPF","AngularJS","Git","NUnit","Ninject","Moq","SQL"],
+            "tools":["WPF","AngularJS","Git","NUnit","Ninject","JEE","Moq","SQL"],
             "devops":["Jenkins", "TFS", "GitLab"],
             "process":["Agile","Scrum"]
         }
