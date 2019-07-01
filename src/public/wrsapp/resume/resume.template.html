@@ -1,8 +1,6 @@
 <div class="container">
-    <resume-header personal-info="resumeCtrl.personal_info" >
-
-    </resume-header>
-    <!-- <resume-experience ng-repeat="resumeCtrl.experiences" experience="experience">
-
-    </resume-experience> -->
+    <resume-header personal-info="resumeCtrl.personal_info" ></resume-header>
+    <div class="container box">
+        <resume-experience ng-repeat="experience in resumeCtrl.experiences" experience="experience"></resume-experience> 
+    </div>
 </div>
