@@ -30,6 +30,10 @@
           return ResumeService.getResume();
         }]
       }
+    })
+    .state('about', {
+      url: '/about/',
+      templateUrl: 'src/public/wrsapp/about/about.template.html'
     });
   }  
   })();

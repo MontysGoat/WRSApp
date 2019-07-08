@@ -5,14 +5,16 @@
     <title>Well Rounded Square</title>
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Fredoka+One' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Michroma|Montserrat+Alternates|Nunito|Nunito+Sans|Open+Sans+Condensed:300|Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates|Nunito|Nunito+Sans|Open+Sans+Condensed:300|Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|DM+Serif+Text|Lato|Raleway|Roboto+Condensed&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"  rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/themes/{{theme}}ThemePalette.css">
     <link rel="stylesheet" href="css/wrs.css">
     <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/resume.css">
   </head>
-  <body>
+  <body class="overflow-hidden">
     <header>
       <nav id="header-nav" class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -36,10 +38,10 @@
                 <a href="index.html">
                   <span class="glyphicon glyphicon-home"></span> Home</a>
               </li>
-              <!-- <li id="navMenuButton" ui-sref-active="active">
-                  <a ui-sref="public.wrsapp.about">About</a>
-                </li> -->
               <li id="navMenuButton" ui-sref-active="active">
+                  <a ui-sref="about">About</a>
+                </li>
+              <li id="navMenuButton" ui-sref-active="active" class="item">
                 <a ui-sref="resume">Résumé</a>
               </li>
               <!-- <li id="navMenuButton" ui-sref-active="active">
@@ -54,7 +56,7 @@
         </div><!-- .container -->
       </nav><!-- #header-nav -->
     </header>
-    <ui-view></ui-view>
+    <ui-view ></ui-view>
 
     <!-- Libraries -->
     <script src="lib/angular.min.js"></script>

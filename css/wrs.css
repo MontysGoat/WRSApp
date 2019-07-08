@@ -1,8 +1,9 @@
 body {
   font-size: 16px;
   color: var(--text-on-primary);
-  background-color:var(--primary-hue-mid);
+  background-color:var(--primary-hue-light);
   font-family: 'Nunito', sans-serif;
+  padding-top: 75px;
 }
 
 .initial-loading {
@@ -71,11 +72,13 @@ body {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 #nav-list a {
   border: 1px solid #E7E7E7;
   text-align: center;
   padding-top: -10px;
   padding-bottom: -10px;
+  color: var( --text-on-primary)
 }
 #nav-list a:hover {
   background:var(--secondary-hue-light);
@@ -90,8 +93,8 @@ body {
   border: 1px solid #E7E7E7;
 }
 
-.active {
-  color: var(--secondary-hue-mid)
+#nav-list a .active {
+  color: var( --text-on-primary);
 }
 
 #phone {

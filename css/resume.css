@@ -1,0 +1,30 @@
+.resume * h1 {
+  color: var(--secondary-hue-light);
+  font-family: 'DM Serif Display', serif;
+  font-size: 40pt;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+.resume > resume-header {
+  padding-left: 0px;
+}
+
+.resume * div {
+  font-family: 'Lato', sans-serif;
+}
+
+
+.resume > .fundamental{
+  margin-top: 80 px;
+
+}
+
+.resume * .header{
+  color: var(--text-on-primary);  
+  font-family: 'Raleway', sans-serif;
+  font-size: 16 pt;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--text-on-primary);
+}
+
