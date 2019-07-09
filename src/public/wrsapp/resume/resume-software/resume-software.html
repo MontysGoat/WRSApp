@@ -4,7 +4,8 @@
       {{$ctrl.software.languages}}
     </h2>
     <div class="text-left">
-      {{$ctrl.software.tools}}
+      <span>Tools: </span>
+      <span ng-repeat='tool in $ctrl.software.tools'>{{tool}} </span>
     </div>
     <div class="text-left">
       {{$ctrl.software.devops}}

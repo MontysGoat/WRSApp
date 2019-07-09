@@ -1,7 +1,7 @@
 .resume * h1 {
   color: var(--secondary-hue-light);
   font-family: 'DM Serif Display', serif;
-  font-size: 40pt;
+  font-size: 50pt;
   text-align: left;
   margin-bottom: 0px;
 }
@@ -11,20 +11,52 @@
 }
 
 .resume * div {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 
 .resume > .fundamental{
-  margin-top: 80 px;
-
+  margin-top: 5px;
+  background-color: var(--primary-hue-light);
 }
 
 .resume * .header{
   color: var(--text-on-primary);  
   font-family: 'Raleway', sans-serif;
-  font-size: 16 pt;
+  font-size: 28pt;
   padding-bottom: 8px;
   border-bottom: 1px solid var(--text-on-primary);
 }
 
+.resume * a{
+  color: var(--text-on-primary);  
+}
+
+resume-header > span {
+  font-family: 'Raleway', sans-serif;
+}
+
+.box{
+  background-color: var(--primary-hue-mid);
+}
+
+.resume > .fundamental {
+  background-color: var(--primary-hue-light);
+}
+
+.resume * li {
+  font-size: 10pt;
+}
+
+ul{
+  padding-inline-start: 20px;
+}
+
+.row [class*="col-"]{
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
+.row{
+  overflow: hidden; 
+}

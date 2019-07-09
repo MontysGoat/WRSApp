@@ -80,21 +80,21 @@ body {
   padding-bottom: -10px;
   color: var( --text-on-primary)
 }
-#nav-list a:hover {
-  background:var(--secondary-hue-light);
-  /* border-color:rgba(0,0,0,0); */
-  color: var(--primary-hue-mid);
-}
 #nav-list a span {
   font-size: 1.8em;
 }
 
-.box {
-  border: 1px solid #E7E7E7;
+
+#nav-list .active a {
+  background:var(--primary-hue-mid);
+  border: 1px solid var(--secondary-hue-mid);
 }
 
-#nav-list a .active {
-  color: var( --text-on-primary);
+
+#nav-list a:hover {
+  background:var(--secondary-hue-light);
+  /* border-color:rgba(0,0,0,0); */
+  color: var(--primary-hue-mid);
 }
 
 #phone {

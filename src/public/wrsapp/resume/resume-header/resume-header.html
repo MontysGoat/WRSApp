@@ -1,14 +1,13 @@
-
-
-  <h1 class="text-left">
-    {{$ctrl.personalInfo.name}}
-  </h1>
-  <div class="text-left">
-    {{$ctrl.personalInfo.career}}
-  </div>
-  <div class="text-left">
-    {{$ctrl.personalInfo.email}}
-  </div>
-  <div class="text-left">
-    {{$ctrl.personalInfo.website}}
-  </div>
+<h1 class="text-left">
+  {{$ctrl.personalInfo.name}}
+</h1>
+<span class="text-center">
+  {{$ctrl.personalInfo.career}} |
+</span>
+<span class="text-center">
+  {{$ctrl.personalInfo.email}} |
+</span>
+<span class="text-center">
+  <a ui-sref="about">
+    {{$ctrl.personalInfo.website}}</a>
+</span>

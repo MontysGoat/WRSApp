@@ -1,13 +1,16 @@
-
-  <h2 class="text-left">
-    {{$ctrl.experience.company}}
-  </h2>
-  <div class="text-left">
-    {{$ctrl.experience.title}}
+<div class="col-sm-12 col-md-4 col-lg-4">
+  <div class="col-md-12 col-lg-12 box">
+    <h2 class="text-left">
+      {{$ctrl.experience.company}}
+    </h2>
+    <div class="text-left font-italic">
+      {{$ctrl.experience.title}}
+    </div>
+    <div class="text-left">
+      {{$ctrl.experience.time}}
+    </div>
+    <ul>
+      <li ng-repeat="task in $ctrl.experience.tasks">{{task}}</li>
+    </ul>
   </div>
-  <div class="text-left">
-    {{$ctrl.experience.time}}
-  </div>
-  <ul>
-    <li ng-repeat="task in $ctrl.experience.tasks">{{task}}</li>
-  </ul>
+</div>
