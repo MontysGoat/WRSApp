@@ -1,11 +1,14 @@
 <div class="col-sm-12 col-md-6 col-lg-6">
-  <div class="col-md-12 col-lg-12 box">
+  <div class="col-sm-12 col-md-12 col-lg-12 box">
     <h2 class="text-left">
       {{$ctrl.education.school}}
     </h2>
-    <div>{{$ctrl.education.degree}}</div>
-    <div>{{$ctrl.education.location}}</div>
-    <div>{{$ctrl.education.graduation_date}}</div>
+    <div>
+      <span class='pull-left'>{{$ctrl.education.location}}</span><span class='pull-right'>{{$ctrl.education.graduation_date}}</span>
+    </div>
+    <br>
+    <div>{{$ctrl.education.degree}}</div>    
     <div>GPA: {{$ctrl.education.GPA}}</div>
+    <br>
   </div>
 </div>

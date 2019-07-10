@@ -1,16 +1,28 @@
-<div class="container">
-
-    <h2 class="text-left">
-      {{$ctrl.software.languages}}
-    </h2>
-    <div class="text-left">
-      <span>Tools: </span>
-      <span ng-repeat='tool in $ctrl.software.tools'>{{tool}} </span>
-    </div>
-    <div class="text-left">
-      {{$ctrl.software.devops}}
-    </div>
-    <div class="text-left">
-      {{$ctrl.software.process}}
+<div class="row row-eq-height">
+  <div class="col-sm-12 col-md-3 col-lg-3">
+    <div class="col-sm-12 col-md-12 col-lg-12 box">
+      <h3>Languages: </h3>
+      <span>{{ $ctrl.software.languages.join(' | ')}} </span>
     </div>
   </div>
+  <div class="col-sm-12 col-md-3 col-lg-3">
+    <div class="col-sm-12 col-md-12 col-lg-12 box">
+      <h3>Tools: </h3>
+      <span >{{$ctrl.software.tools.join(' | ')}} </span>
+    </div>
+  </div>
+
+  <div class="col-sm-12 col-md-3 col-lg-3">
+    <div class="col-sm-12 col-md-12 col-lg-12 box">
+      <h3>DevOps: </h3>
+      <span >{{$ctrl.software.devops.join(' | ')}} </span>
+    </div>
+  </div>
+
+  <div class="col-sm-12 col-md-3 col-lg-3">
+    <div class="col-sm-12 col-md-12 col-lg-12 box">
+      <h3>Process: </h3>
+      <span >{{$ctrl.software.process.join(' | ')}} </span>
+    </div>
+  </div>
+</div>

@@ -38,6 +38,7 @@ resume-header > span {
 
 .box{
   background-color: var(--primary-hue-mid);
+
 }
 
 .resume > .fundamental {
@@ -49,14 +50,51 @@ resume-header > span {
 }
 
 ul{
-  padding-inline-start: 20px;
+  padding-inline-start: 10px;
 }
 
-.row [class*="col-"]{
+.row [class*="col-md"]{
   margin-bottom: -99999px;
   padding-bottom: 99999px;
 }
 
+.row [class*="col-lg"]{
+  margin-bottom: -99999px;
+  padding-bottom: 99999px;
+}
+
+.row [class*="col-sm"]{
+  margin-bottom: 5px;
+  padding-bottom: 5px;
+  padding-top: 1px;
+}
+
+
 .row{
   overflow: hidden; 
+}
+
+.resume * h2 {
+  font-family: 'Roboto', sans-serif;
+}
+
+.resume * h3 {
+  font-family: 'Roboto', sans-serif;
+}
+
+resume-experience * h2{
+  margin-bottom: 0px;
+}
+
+resume-education * h2{
+  margin-bottom: 0px;
+}
+
+resume-education * br{
+  display: block;
+  margin: 5px 0;
+}
+
+resume-software{
+  margin-bottom: 20px;
 }

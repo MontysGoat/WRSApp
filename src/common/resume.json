@@ -3,7 +3,7 @@
         "personal_info":{
             "name":"George Hearn",
             "career":"Software Developer",
-            "email":"test@test.com",
+            "email":"wrs@wellroundedsquare.net",
             "website":"www.WellRoundedSquare.net"
         },
         "experience":[
@@ -25,7 +25,7 @@
                 "title":"Senior Simulation Engineer",
                 "location":"Owings Mills, MD",
                 "tasks":[
-                    "Developed and delivered legacy pipeline energy optimization tool in C#",
+                    "Developed and delivered pipeline energy optimization tool in C#",
                     "Built custom software tools used by customers",
                     "Configured and maintained realtime transient pipeline models",
                     "Wrote and delivered multiple training sessions for internal/external audiences"
@@ -33,7 +33,7 @@
             },
             {
                 "time":"2011-2014",
-                "company":"Controls Southeast Inc.",
+                "company":"CSI",
                 "title":"Technical Services Engineer",
                 "location":"Charlotte, NC",
                 "tasks":[
