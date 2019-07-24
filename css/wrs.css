@@ -25,13 +25,6 @@ body {
   border: 0;
 }
 
-#logo-img {
-  background: url('../images/restaurant-logo_large.png') no-repeat;
-  width: 150px;
-  height: 150px;
-  margin: 10px 15px 10px 0;
-}
-
 .navbar-brand {
   padding-top: 25px;
 }
@@ -90,28 +83,18 @@ body {
   border: 1px solid var(--secondary-hue-mid);
 }
 
+.btn .active {
+  color:var(--secondary-hue-mid);
+}
+
 
 #nav-list a:hover {
   background:var(--secondary-hue-light);
-  /* border-color:rgba(0,0,0,0); */
   color: var(--primary-hue-mid);
 }
 
-#phone {
-  margin-top: 5px;
-}
-#phone a { /* Phone number */
-  text-align: right;
-  padding-bottom: 0;
-}
-#phone div { /* We Deliver */
-  color: #557c3e;
-  text-align: right;
-  padding-right: 15px;
-}
-
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #61122f;
+  border: 1px solid var(--text-on-primary);
 }
 .navbar-header button.navbar-toggle {
   clear: both;
@@ -172,6 +155,9 @@ a[ui-sref="admin.auth"] {
     padding-top: 10px;
     height: 80px;
   }
+  .navbar-collapse{
+    border-color: var(--primary-hue-dark);
+  }
   .navbar-brand h1 { /* Restaurant name */
     padding-top: 10px;
     font-size: 5vw; /* 1vw = 1% of viewport width */
@@ -183,6 +169,30 @@ a[ui-sref="admin.auth"] {
   .navbar-brand p img { /* Star-K */
     height: 20px;
   }
+  #nav-list a {
+    border: 0px solid #E7E7E7;
+    text-align: center;
+    padding-top: -10px;
+    padding-bottom: -10px;
+    color: var( --text-on-primary)
+  }
+  #nav-list a span {
+    font-size: 1.8em;
+  }
+  
+  
+  #nav-list .active a {
+    background:var(--secondary-hue-light);
+    border: 0px solid var(--secondary-hue-light);
+  }
+  
+  
+  #nav-list a:hover {
+    background:var(--secondary-hue-light);
+    color: var(--primary-hue-mid);
+  }
+  
+  
 
   #collapsable-nav a { /* Collapsed nav menu text */
     font-size: 1.2em;
@@ -192,15 +202,6 @@ a[ui-sref="admin.auth"] {
     margin-right: 5px;
   }
 
-  #call-btn > a {
-    font-size: 1.5em;
-    display: block;
-    margin: 0 20px;
-    padding: 10px;
-    border: 2px solid #fff;
-    background-color: #f6b319;
-    color: #951c49;
-  }
   #xs-deliver {
     margin-top: 5px;
     font-size: .7em;
