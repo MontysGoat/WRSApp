@@ -11,7 +11,7 @@
     rel="stylesheet">
   <link
     href="https://fonts.googleapis.com/css?family=DM+Serif+Display|DM+Serif+Text|Lato|Raleway|Roboto+Condensed&display=swap"
-    rel="stylesheet">
+    rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Amiri|Red+Hat+Display|Reem+Kufi&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/themes/{{theme}}ThemePalette.css">
@@ -46,9 +46,13 @@
             <li id="navMenuButton" ui-sref-active="active">
               <a ui-sref="about">About</a>
             </li>
-            <br class="hidden-lg hidden-md hidden-sm"/>
+            <br class="hidden-lg hidden-md hidden-sm" />
             <li id="navMenuButton" ui-sref-active="active" class="item">
               <a ui-sref="resume">Résumé</a>
+            </li>
+            <br class="hidden-lg hidden-md hidden-sm" />
+            <li id="navMenuButton" ui-sref-active="active" class="item">
+              <a ui-sref="projects">Projects</a>
             </li>
           </ul><!-- #nav-list -->
           <button type="button" class="btn btn-primary nav navbar-nav navbar-right" ng-click='toggleTheme()'>

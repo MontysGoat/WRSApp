@@ -34,6 +34,10 @@
     .state('about', {
       url: '/about/',
       templateUrl: 'src/public/wrsapp/about/about.template.html'
+    })
+    .state('projects', {
+      url: '/projects',
+      templateUrl: 'src/public/wrsapp/projects/projects.template.html'
     });
   }  
   })();
