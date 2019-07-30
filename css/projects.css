@@ -12,6 +12,11 @@
     margin: 40px 0;
 }
 
+h3 {
+  font-family: 'Nunito', sans-serif;
+  text-align: left;
+}
+
 /* ---------------------------------------------------
     SIDEBAR STYLE
 ----------------------------------------------------- */
@@ -19,6 +24,7 @@
 .wrapper {
     display: flex;
     width: 100%;
+    margin: -5px;
     align-items: stretch;
 }
 
@@ -26,6 +32,7 @@
     min-width: 250px;
     max-width: 250px;
     transition: all 0.3s;
+    background-color: var(--primary-hue-mid);
 }
 
 #sidebar.active {
@@ -48,9 +55,18 @@
     padding: 10px;
     font-size: 1.1em;
     display: block;
+    border: 0px;
+    text-align: end;
 }
 
+#sidebar a:hover {
+  background:var(--primary-hue-mid);
+  color: var(--secondary-hue-light);
+}
 
+#sidebar button{
+  color: var(--text-on-primary);
+}
 
 a[data-toggle="collapse"] {
     position: relative;

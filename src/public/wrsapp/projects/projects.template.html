@@ -1,6 +1,4 @@
-<!-- Bootstrap CSS CDN -->
-<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous"> -->
-<!-- Our Custom CSS -->
+
 <link rel="stylesheet" href="css/projects.css">
 
 <div class="wrapper projects">
@@ -12,15 +10,15 @@
       </div>
 
 
-      <ul class="list-unstyled components">
+      <ul id="nav-list" class="list-unstyled components">
         <li>
-          <a href="#">Now Playing</a>
+          <a href="#" class="float-right">Now Playing</a>
         </li>
       </ul>
     </div>
     <div class="pull-right side-toggle">
       <button type="button" id="sidebarCollapse" class="btn btn-info ">
-        <span>&lt;</span>
+        &lt;
       </button>
     </div>
   </nav>
@@ -45,6 +43,11 @@
   $(document).ready(function () {
     $('#sidebarCollapse').on('click', function () {
       $('#sidebar').toggleClass('active');
+      if($('#sidebarcollapse').text() == '&lt;'){
+        $('#sidebarcollapse').text('&rt;')
+      } else {
+        $('#sidebarcollapse').text('&lt;')
+      }
     });
   });
 </script>
