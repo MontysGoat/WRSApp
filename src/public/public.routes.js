@@ -40,6 +40,17 @@
       templateUrl: 'src/public/wrsapp/projects/projects.template.html',
       controller: 'ProjectsController',
       controllerAs: 'projectsCtrl'
+    })
+    .state('projects.now-playing', {
+      url: '/projects/now-playing',
+      templateUrl: 'src/public/wrsapp/projects/now-playing/now-playing.template.html',
+      controller: 'NowPlayingController',
+      controllerAs: 'nowPlayingController',
+      resolve: {
+        token: ['SpotifyService', function (SpotifyService) {
+          return SpotifyService.getToken();
+        }]
+      }
     });
   }  
   })();
