@@ -37,7 +37,9 @@
     })
     .state('projects', {
       url: '/projects',
-      templateUrl: 'src/public/wrsapp/projects/projects.template.html'
+      templateUrl: 'src/public/wrsapp/projects/projects.template.html',
+      controller: 'ProjectsController',
+      controllerAs: 'projectsCtrl'
     });
   }  
   })();
