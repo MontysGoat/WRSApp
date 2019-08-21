@@ -32,7 +32,7 @@
       }
     })
     .state('about', {
-      url: '/about/',
+      url: '/about',
       templateUrl: 'src/public/wrsapp/about/about.template.html'
     })
     .state('projects', {
@@ -46,11 +46,11 @@
       templateUrl: 'src/public/wrsapp/projects/now-playing/now-playing.template.html',
       controller: 'NowPlayingController',
       controllerAs: 'nowPlayingController',
-      resolve: {
-        token: ['SpotifyService', function (SpotifyService) {
-          return SpotifyService.getToken();
-        }]
-      }
+      // resolve: {
+      //   token: ['SpotifyService', function (SpotifyService) {
+      //     return SpotifyService.getToken();
+      //   }]
+      // }
     });
   }  
   })();
