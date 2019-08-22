@@ -161,14 +161,14 @@ a[ui-sref="admin.auth"] {
   /* Header */
   .navbar-brand {
     padding-top: 10px;
-    height: 80px;
+    height: 50px;
   }
   .navbar-collapse{
     border-color: var(--primary-hue-dark);
   }
   .navbar-brand h1 { /* Restaurant name */
     padding-top: 10px;
-    font-size: 5vw; /* 1vw = 1% of viewport width */
+    font-size: 30pt; /* 1vw = 1% of viewport width */
   }
   .navbar-brand p { /* Kosher cert */
     font-size: .6em;
@@ -237,8 +237,13 @@ a[ui-sref="admin.auth"] {
 @media (max-width: 479px) {
   /* Header */
   .navbar-brand h1 { /* Restaurant name */
-    padding-top: 5px;
-    font-size: 6vw;
+    padding-top: 12px;
+    height: 50px;
+    font-size: 30pt;
+  }
+
+  .navbar-toggle{
+    padding-top:-20px;
   }
   /* End Header */
 }

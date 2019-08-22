@@ -24,10 +24,12 @@ p {
 
 #WRS{
   border: 2px solid var(--secondary-hue-light);
+  min-width: 75vw;
 }
 
 #intro{
   background-color: var(--primary-hue-mid);
+  min-width: 75vw;
 }
 
 #firstword > h2{
@@ -41,4 +43,22 @@ p {
 
 p>a{
   color: var(--secondary-hue-light);
+}
+
+@media (max-width: 768px) {
+    h1{
+      font-size: 4em;
+    }
+
+    #WRS{
+      margin-top: 20px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    #intro{
+      margin-top: 20px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
 }

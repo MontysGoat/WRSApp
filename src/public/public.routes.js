@@ -20,25 +20,25 @@
     // })
   
     // Resume Page
-    .state('resume', {
-      url: '/resume',
-      templateUrl: 'src/public/wrsapp/resume/resume.template.html',
-      controller: 'ResumeController',
-      controllerAs: 'resumeCtrl',
-      resolve: {
-        resume: ['ResumeService', function (ResumeService) {
-          return ResumeService.getResume();
-        }]
-      },
-      data: {
-        css:'css/resume.css'
-      }
-    })
     .state('about', {
       url: '/about',
       templateUrl: 'src/public/wrsapp/about/about.template.html',
       data: {
         css:'css/about.css'
+      }
+    })
+    .state('resume', {
+      url: '/resume',
+      templateUrl: 'src/public/wrsapp/resume/resume.template.html',
+      controller: 'ResumeController',
+      controllerAs: 'resumeCtrl',
+      data: {
+        css:'css/resume.css'
+      },
+      resolve: {
+        resume: ['ResumeService', function (ResumeService) {
+          return ResumeService.getResume();
+        }]
       }
     })
     .state('projects', {
@@ -48,14 +48,10 @@
     .state('now-playing', {
       url: '/projects/now-playing',
       templateUrl: 'src/public/wrsapp/projects/now-playing/now-playing.template.html',
-      // controller: 'NowPlayingController',
-      // controllerAs: 'nowPlayingController',
+      data: {
+        css:'css/projects.css'
+      },
       parent: 'projects'
-      // resolve: {
-      //   token: ['SpotifyService', function (SpotifyService) {
-      //     return SpotifyService.getToken();
-      //   }]
-      // }
     });
   }  
   })();
