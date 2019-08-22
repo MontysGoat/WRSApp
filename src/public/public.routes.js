@@ -8,7 +8,7 @@
   function RoutesConfig($stateProvider, $urlRouterProvider) {
   
     // Redirect to home page if no other URL matches
-    $urlRouterProvider.otherwise('/resume');
+    $urlRouterProvider.otherwise('/about');
   
     // *** Set up UI states ***
     $stateProvider
@@ -29,11 +29,17 @@
         resume: ['ResumeService', function (ResumeService) {
           return ResumeService.getResume();
         }]
+      },
+      data: {
+        css:'css/resume.css'
       }
     })
     .state('about', {
       url: '/about',
-      templateUrl: 'src/public/wrsapp/about/about.template.html'
+      templateUrl: 'src/public/wrsapp/about/about.template.html',
+      data: {
+        css:'css/about.css'
+      }
     })
     .state('projects', {
       abstract: true,

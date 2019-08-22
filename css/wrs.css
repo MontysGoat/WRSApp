@@ -46,6 +46,7 @@ body {
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: 10px;
   line-height: .75;
 }
 .navbar-brand a:hover, .navbar-brand a:focus {

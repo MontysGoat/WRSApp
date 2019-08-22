@@ -1,15 +1,44 @@
 h1 {
   color: var(--secondary-hue-light);
   font-family: 'Josefin Sans', sans-serif;
-  font-size: 80pt;
+  font-weight: bold; 
+  font-size: 60pt;
   text-align: left;
+  margin-left: -5px;
+  line-height: 75%;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  font-size: 50pt;
+  text-align: left;
+  margin-left: -5px;
+  line-height: 75%;
+  float: left;
+}
+
+p {
+  font-family: 'Nunito', sans-serif;
+}
+
+#WRS{
+  border: 2px solid var(--secondary-hue-light);
+}
+
+#intro{
+  background-color: var(--primary-hue-mid);
+}
+
+#firstword > h2{
+  padding-right: 20px;
   margin-bottom: 0px;
 }
 
-body {
-  font-size: 16px;
-  color: red;
-  background-color:red;
-  font-family: 'Nunito', sans-serif;
-  padding-top: 75px;
+#paragraph > p{
+  margin-top: 12px;
+}
+
+p>a{
+  color: var(--secondary-hue-light);
 }
