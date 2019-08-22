@@ -39,11 +39,11 @@
       abstract: true,
       templateUrl: 'src/public/wrsapp/projects/projects.template.html'
     })
-    .state('projects.now-playing', {
+    .state('now-playing', {
       url: '/projects/now-playing',
       templateUrl: 'src/public/wrsapp/projects/now-playing/now-playing.template.html',
-      controller: 'NowPlayingController',
-      controllerAs: 'nowPlayingController',
+      // controller: 'NowPlayingController',
+      // controllerAs: 'nowPlayingController',
       parent: 'projects'
       // resolve: {
       //   token: ['SpotifyService', function (SpotifyService) {

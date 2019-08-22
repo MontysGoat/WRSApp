@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/themes/{{theme}}ThemePalette.css">
+  <link rel="stylesheet" ng-href="css/themes/{{theme}}ThemePalette.css">
   <link rel="stylesheet" href="css/wrs.css">
   <link rel="stylesheet" href="css/common.css">
   <link rel="stylesheet" href="css/resume.css">
@@ -53,12 +53,12 @@
               <a ui-sref="resume">Résumé</a>
             </li>
             <br class="hidden-lg hidden-md hidden-sm" />
-            <li id="navMenuButton" ui-sref-active="{'active': 'projects.**'}" class="item dropdown">
+            <li id="navMenuButton" ui-sref-active="active" ui-sref="projects" class="item dropdown">
                 <a class="dropdown-toggle"  data-toggle="dropdown">Projects
                     <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                       <li >
-                        <a ui-sref-active='active' ui-sref="projects.now-playing">Now Playing</a>
+                        <a ui-sref="now-playing" >Now Playing</a>
                       </li>
                     </ul>
           </ul><!-- #nav-list -->
@@ -74,8 +74,10 @@
   <!-- Libraries -->
   <script src="lib/jquery-2.1.4.min.js"></script>
   <script src="lib/bootstrap.min.js"></script>
-  <script src="lib/angular.min.js"></script>
-  <script src="lib/angular-ui-router.min.js"></script>
+  <!-- <script src="lib/angular.min.js"></script> -->
+  <script src="node_modules/angular/angular.js"></script>
+  <!-- <script src="lib/angular-ui-router.min.js"></script> -->
+  <script src="node_modules/@uirouter/angularjs/release/angular-ui-router.js"></script>
 
   <!--Main WRSApp Module -->
   <script src="src/wrsapp.module.js"></script>
