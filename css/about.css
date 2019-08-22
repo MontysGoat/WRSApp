@@ -1,0 +1,15 @@
+h1 {
+  color: var(--secondary-hue-light);
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 80pt;
+  text-align: left;
+  margin-bottom: 0px;
+}
+
+body {
+  font-size: 16px;
+  color: red;
+  background-color:red;
+  font-family: 'Nunito', sans-serif;
+  padding-top: 75px;
+}

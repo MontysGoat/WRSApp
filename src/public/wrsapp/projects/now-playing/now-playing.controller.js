@@ -4,9 +4,9 @@
   angular.module('public')
   .controller('NowPlayingController', NowPlayingController);
   
-  NowPlayingController.$inject = ['token'];
-  function NowPlayingController(token) {
-   
+  //NowPlayingController.$inject = ['token'];
+  function NowPlayingController() {
+   var test = 'test';
   }
   
   

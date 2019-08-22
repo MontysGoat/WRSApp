@@ -36,16 +36,15 @@
       templateUrl: 'src/public/wrsapp/about/about.template.html'
     })
     .state('projects', {
-      url: '/projects',
-      templateUrl: 'src/public/wrsapp/projects/projects.template.html',
-      controller: 'ProjectsController',
-      controllerAs: 'projectsCtrl'
+      abstract: true,
+      templateUrl: 'src/public/wrsapp/projects/projects.template.html'
     })
     .state('projects.now-playing', {
       url: '/projects/now-playing',
       templateUrl: 'src/public/wrsapp/projects/now-playing/now-playing.template.html',
       controller: 'NowPlayingController',
       controllerAs: 'nowPlayingController',
+      parent: 'projects'
       // resolve: {
       //   token: ['SpotifyService', function (SpotifyService) {
       //     return SpotifyService.getToken();

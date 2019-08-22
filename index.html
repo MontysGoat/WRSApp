@@ -11,7 +11,8 @@
     rel="stylesheet">
   <link
     href="https://fonts.googleapis.com/css?family=DM+Serif+Display|DM+Serif+Text|Lato|Raleway|Roboto+Condensed&display=swap"
-    rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Amiri|Red+Hat+Display|Reem+Kufi&display=swap" rel="stylesheet">
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amiri|Red+Hat+Display|Reem+Kufi&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -52,9 +53,14 @@
               <a ui-sref="resume">Résumé</a>
             </li>
             <br class="hidden-lg hidden-md hidden-sm" />
-            <li id="navMenuButton" ui-sref-active="active" class="item">
-              <a ui-sref="projects">Projects</a>
-            </li>
+            <li id="navMenuButton" ui-sref-active="{'active': 'projects.**'}" class="item dropdown">
+                <a class="dropdown-toggle"  data-toggle="dropdown">Projects
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li >
+                        <a ui-sref-active='active' ui-sref="projects.now-playing">Now Playing</a>
+                      </li>
+                    </ul>
           </ul><!-- #nav-list -->
           <button type="button" class="btn btn-primary nav navbar-nav navbar-right" ng-click='toggleTheme()'>
             <i class="material-icons {{lightActive}}">highlight</i>
