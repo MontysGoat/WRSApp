@@ -1,0 +1,15 @@
+{
+  "requires": true,
+  "lockfileVersion": 1,
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.22",
+    "@uirouter/core": {
+      "integrity": "sha512-rwFOH++z/KY8y+h0IOpQ5uC8Nim6E0EBCQrIjhVCr+XKYXgpK+VdtuOLFdogvbJ3AAi5Z7ei00qdEr7Did5CAg==",
+      "resolved": "https://registry.npmjs.org/@uirouter/core/-/core-5.0.23.tgz",
+      "version": "5.0.23"
+    },
+    "angular": "^1.7.8",
+    "angular-ui-router-css": "0.0.0",
+    "betsol-load-stylesheet": "^1.1.0"
+  }
+}
