@@ -10,7 +10,7 @@
   config.$inject = ['$urlRouterProvider', '$locationProvider'];
   function config($urlRouterProvider, $locationProvider) {
 
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.otherwise('/about');
   }
 
 })();
