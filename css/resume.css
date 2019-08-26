@@ -99,3 +99,10 @@ resume-education * br{
 resume-software{
   margin-bottom: 20px;
 }
+
+@media (max-width: 768px) {
+  .resume * h1{
+    font-size: 25vw;
+    line-height: 85%;
+  }
+}
