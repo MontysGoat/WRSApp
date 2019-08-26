@@ -104,5 +104,6 @@ resume-software{
   .resume * h1{
     font-size: 25vw;
     line-height: 85%;
+    margin-top: 0px;
   }
 }
