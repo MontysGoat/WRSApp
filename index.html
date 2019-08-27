@@ -54,14 +54,15 @@
               <a ui-sref="resume">Résumé</a>
             </li>
             <br class="hidden-lg hidden-md hidden-sm" />
-            <li id="navMenuButton" ui-sref-active="active" ui-sref="projects" class="item dropdown">
-                <a class="dropdown-toggle"  data-toggle="dropdown">Projects
-                    <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li >
-                        <a ui-sref="now-playing" >Now Playing</a>
-                      </li>
-                    </ul>
+            <!-- <li id="navMenuButton" ui-sref-active="active" ui-sref="projects" class="item dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown">Projects
+                <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a ui-sref="now-playing">Now Playing</a>
+                </li>
+              </ul>
+            </li> -->
           </ul><!-- #nav-list -->
           <button type="button" class="btn btn-primary nav navbar-nav navbar-right" ng-click='toggleTheme()'>
             <i class="material-icons {{lightActive}}">highlight</i>
@@ -71,7 +72,7 @@
     </nav><!-- #header-nav -->
   </header>
   <main>
-  <ui-view></ui-view>
+    <ui-view></ui-view>
   </main>
 
   <!-- Libraries -->
