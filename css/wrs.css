@@ -10,7 +10,7 @@ body {
 main {
   position: absolute;
   top: 63px;
-  overflow-y: scroll;
+  overflow-y: auto;
   bottom: 0;
   width: 100%;
 }
@@ -108,7 +108,7 @@ main {
 }
 .navbar-header button.navbar-toggle {
   clear: both;
-  margin-top: -30px;
+  margin-top: -35px;
 }
 
 .dropdown-menu{
