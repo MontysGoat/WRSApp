@@ -1,7 +1,7 @@
 body {
   font-size: 16px;
   color: var(--text-on-primary);
-  background-color:var(--primary-hue-light);
+  background-color: var(--primary-hue-light);
   font-family: 'Nunito', sans-serif;
   padding-top: 75px;
   overflow: hidden;
@@ -19,17 +19,17 @@ main {
   margin-top: 60px;
 }
 
-.navbar-nav > li{
-  margin-right:5px;
+.navbar-nav>li {
+  margin-right: 5px;
   margin-left: 5px;
   color: var(--text-on-primary);
-  background-color:var(--primary-hue-mid);
-
+  background-color: var(--primary-hue-mid);
 }
 
 /** HEADER **/
+
 #header-nav {
-  background-color:var(--primary-hue-dark);
+  background-color: var(--primary-hue-dark);
   border-radius: 0;
   border: 0;
 }
@@ -39,16 +39,17 @@ main {
 }
 
 .btn {
-  background-color:rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
   border: 0px;
 }
 
 .btn:hover {
-  color:var(--secondary-hue-light);  
-  background-color:rgba(0,0,0,0);
+  color: var(--secondary-hue-light);
+  background-color: rgba(0, 0, 0, 0);
 }
 
-.navbar-brand h1 { /* WRS */
+.navbar-brand h1 {
+  /* WRS */
   font-family: 'Josefin Sans', sans-serif;
   color: var(--text-on-primary);
   font-size: 2.5em;
@@ -58,16 +59,20 @@ main {
   margin-left: 10px;
   line-height: .75;
 }
+
 .navbar-brand a:hover, .navbar-brand a:focus {
   text-decoration: none;
 }
-.navbar-brand p { 
+
+.navbar-brand p {
   color: var(--primary-hue-dark);
   text-transform: uppercase;
   font-size: .7em;
   margin-top: 15px;
 }
-.navbar-brand p span { /* Star-K */
+
+.navbar-brand p span {
+  /* Star-K */
   vertical-align: middle;
 }
 
@@ -83,43 +88,51 @@ main {
   padding-bottom: -10px;
   color: var( --text-on-primary)
 }
+
 #nav-list a span {
   font-size: 1.8em;
 }
 
+.nav-item {
+  height: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
 
 #nav-list .active a {
-  background:var(--primary-hue-mid);
+  background: var(--primary-hue-mid);
   border: 1px solid var(--secondary-hue-mid);
 }
 
 .btn .active {
-  color:var(--secondary-hue-mid);
+  color: var(--secondary-hue-mid);
 }
 
-
 #nav-list a:hover {
-  background:var(--secondary-hue-light);
+  background: var(--secondary-hue-light);
   color: var(--primary-hue-mid);
 }
 
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+.navbar-brand button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid var(--text-on-primary);
 }
-.navbar-header button.navbar-toggle {
+
+.navbar-brand button.navbar-toggle {
   clear: both;
   margin-top: -30px;
 }
 
-.dropdown-menu{
+.dropdown-menu {
   padding: 0px;
   background-color: var(--primary-hue-mid);
   border-radius: 0px;
   padding: 0px 0px 0px 0px;
 }
+
 /* END HEADER */
 
 /* FOOTER */
+
 .panel-footer {
   margin-top: 30px;
   padding-top: 35px;
@@ -127,32 +140,53 @@ main {
   background-color: #222;
   border-top: 0;
 }
+
 .panel-footer div.row {
   margin-bottom: 35px;
 }
+
 #hours, #address {
   line-height: 2;
 }
-#hours > span, #address > span {
+
+#hours>span, #address>span {
   font-size: 1.3em;
 }
+
 #address p {
   color: #557c3e;
   font-size: .8em;
   line-height: 1.8;
 }
+
 #testimonials {
   font-style: italic;
 }
+
 #testimonials p:nth-child(2) {
   margin-top: 25px;
 }
+
 a[ui-sref="admin.auth"] {
   color: #fff;
 }
+
 /* END FOOTER */
 
+
+
+@media (min-width: 768px) {
+  .dropdown-toggle {
+    /* max-height: 43px; 
+    min-height: 43px; */
+    /* padding-top: 0px;
+    padding-bottom: 0px; */
+    line-height: 1.2;
+  }
+}
+
 /********** Medium devices only **********/
+
 @media (min-width: 992px) and (max-width: 1199px) {
   /* Header */
   #logo-img {
@@ -164,26 +198,30 @@ a[ui-sref="admin.auth"] {
   /* End Header */
 }
 
-
 /********** Extra small devices only **********/
+
 @media (max-width: 767px) {
   /* Header */
   .navbar-brand {
     padding-top: 10px;
     height: 50px;
   }
-  .navbar-collapse{
+  .navbar-collapse {
     border-color: var(--primary-hue-dark);
   }
-  .navbar-brand h1 { /* Restaurant name */
+  .navbar-brand h1 {
+    /* Restaurant name */
     padding-top: 10px;
-    font-size: 30pt; /* 1vw = 1% of viewport width */
+    font-size: 30pt;
+    /* 1vw = 1% of viewport width */
   }
-  .navbar-brand p { /* Kosher cert */
+  .navbar-brand p {
+    /* Kosher cert */
     font-size: .6em;
     margin-top: 12px;
   }
-  .navbar-brand p img { /* Star-K */
+  .navbar-brand p img {
+    /* Star-K */
     height: 20px;
   }
   #nav-list a {
@@ -196,29 +234,23 @@ a[ui-sref="admin.auth"] {
   #nav-list a span {
     font-size: 1.8em;
   }
-  
-  
   #nav-list .active a {
-    background:var(--secondary-hue-light);
+    background: var(--secondary-hue-light);
     border: 0px solid var(--secondary-hue-light);
   }
-  
-  
   #nav-list a:hover {
-    background:var(--secondary-hue-light);
+    background: var(--secondary-hue-light);
     color: var(--primary-hue-mid);
   }
-  
-  
-
-  #collapsable-nav a { /* Collapsed nav menu text */
+  #collapsable-nav a {
+    /* Collapsed nav menu text */
     font-size: 1.2em;
   }
-  #collapsable-nav a span { /* Collapsed nav menu glyph */
+  #collapsable-nav a span {
+    /* Collapsed nav menu glyph */
     font-size: 1em;
     margin-right: 5px;
   }
-
   #xs-deliver {
     margin-top: 5px;
     font-size: .7em;
@@ -226,14 +258,14 @@ a[ui-sref="admin.auth"] {
     text-transform: uppercase;
   }
   /* End Header */
-
   /* Footer */
   .panel-footer section {
     margin-bottom: 30px;
     text-align: center;
   }
   .panel-footer section:nth-child(3) {
-    margin-bottom: 0; /* margin already exists on the whole row */
+    margin-bottom: 0;
+    /* margin already exists on the whole row */
   }
   .panel-footer section hr {
     width: 50%;
@@ -241,18 +273,18 @@ a[ui-sref="admin.auth"] {
   /* End Footer */
 }
 
-
 /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+
 @media (max-width: 479px) {
   /* Header */
-  .navbar-brand h1 { /* Restaurant name */
+  .navbar-brand h1 {
+    /* Restaurant name */
     padding-top: 12px;
     height: 50px;
     font-size: 30pt;
   }
-
-  .navbar-toggle{
-    padding-top:-20px;
+  .navbar-toggle {
+    padding-top: -20px;
   }
   /* End Header */
 }
