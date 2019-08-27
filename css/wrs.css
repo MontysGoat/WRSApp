@@ -3,13 +3,13 @@ body {
   color: var(--text-on-primary);
   background-color:var(--primary-hue-light);
   font-family: 'Nunito', sans-serif;
-  padding-top: 75px;
+  padding-top: 63px;
   overflow: hidden;
 }
 
 main {
   position: absolute;
-  top: 75px;
+  top: 63px;
   overflow-y: scroll;
   bottom: 0;
   width: 100%;

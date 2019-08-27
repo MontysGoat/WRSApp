@@ -25,6 +25,7 @@
 #WRS{
   border: 2px solid var(--secondary-hue-light);
   min-width: 75vw;
+  margin-top:20px;
 }
 
 #intro{
