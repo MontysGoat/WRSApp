@@ -13,10 +13,10 @@
                 "title":"Senior Software Developer",
                 "location":"Owings Mills, MD",
                 "tasks":[
-                    "Developed next gen oil pipeline simulation and leak detection platform on an Agile team",
-                    "Implemented key features for simulation and configuration software in C#",
-                    "Built and designed modern reactive GUI using WPF",
-                    "Focused on test driven development leveraging Nunit, Ninject, and Moq."
+                    "Developing next generation oil pipeline simulation and leak detection platform on an Agile team",
+                    "Implementing key features for simulation and configuration software in C#",
+                    "Building and designing modern reactive GUI using WPF",
+                    "Utilizing test driven development by leveraging Nunit, Ninject, and Moq"
                 ]
             },
             {
@@ -26,9 +26,9 @@
                 "location":"Owings Mills, MD",
                 "tasks":[
                     "Developed and delivered pipeline energy optimization tool in C#",
-                    "Built custom software tools used by customers",
+                    "Built custom software tools driven by customer requirements",
                     "Configured and maintained realtime transient pipeline models",
-                    "Wrote and delivered multiple training sessions for internal/external audiences"
+                    "Wrote and led multiple training sessions for internal/external audiences"
                 ]
             },
             {
@@ -37,9 +37,9 @@
                 "title":"Technical Services Engineer",
                 "location":"Charlotte, NC",
                 "tasks":[
+                    "Developed and designed new industrial engineering products",
                     "Designed external bolt-on heating systems (steam/hot oil) for industrial vessels and piping",
                     "Wrote technical reports (thermal/hydraulic) using CFD and FEA analysis",
-                    "R&D: Developed new products in both a hands-on and engineering design capacity",
                     "Co-invented Sulphur Seal Device (US Patent #20130247763 A1)"
                 ]
             }
@@ -62,7 +62,7 @@
         ],
         "software":{
             "languages":["C#","Java","C++","Javascript"],
-            "tools":["WPF","AngularJS","Git","NUnit","Ninject","JEE","Moq","SQL"],
+            "tools":["WPF","AngularJS","Bootstrap","Git","NUnit","Ninject","JEE","Moq","SQL"],
             "devops":["Jenkins", "TFS", "GitLab"],
             "process":["Agile","Scrum"]
         }
