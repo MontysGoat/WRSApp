@@ -48,10 +48,17 @@
     .state('now-playing', {
       url: '/projects/now-playing',
       templateUrl: 'src/public/wrsapp/projects/now-playing/now-playing.template.html',
+      controller: 'NowPlayingController',
+      controllerAs: 'ctrl',
       data: {
         css:'css/projects.css'
       },
-      parent: 'projects'
+      parent: 'projects',
+      // resolve: {
+      //   login: ['SpotifyService', function (SpotifyService) {
+      //     return SpotifyService.login;
+      //   }]
+      // }
     });
   }  
   })();
